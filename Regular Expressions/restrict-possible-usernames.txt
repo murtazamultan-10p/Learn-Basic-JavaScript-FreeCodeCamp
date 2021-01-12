@@ -1,0 +1,4 @@
+let username = "";
+let userCheck = /^[a-z](\d\d+|[a-z]+\d*)$/gi; // Change this line
+let result = userCheck.test(username);
+console.log(result);

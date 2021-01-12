@@ -1,0 +1,10 @@
+let str = "one two three";
+
+// each \w+ represent a word
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+
+// $wordNumber - placed in the required sequence
+let replaceText = '$3 $2 $1'; // Change this line
+
+let result = str.replace(fixRegex, replaceText);
+console.log(result);
