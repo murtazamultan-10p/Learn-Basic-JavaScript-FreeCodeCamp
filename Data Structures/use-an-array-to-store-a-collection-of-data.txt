@@ -1,0 +1,7 @@
+let yourArray = [
+    "Murtaza",
+    "Multan",
+    24,
+    true,
+    "Trainee Software Engineer at 10pearls"
+]; // Change this line
