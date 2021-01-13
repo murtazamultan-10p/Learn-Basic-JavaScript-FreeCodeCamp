@@ -1,0 +1,4 @@
+//Anonumous function to execute as soon as it declared.
+(function(){
+  console.log("A cozy nest is ready");
+})();
