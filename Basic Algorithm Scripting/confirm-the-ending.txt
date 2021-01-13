@@ -1,0 +1,11 @@
+function confirmEnding(str, target) {
+  let matchStringFrom = str.length-target.length;
+  let strCopy = "";
+  
+  for(let i=matchStringFrom; i< str.length; i++){
+    strCopy+=str[i];
+  }
+  return strCopy === target;
+}
+
+console.log(confirmEnding("Congratulation", "on"));

@@ -1,0 +1,17 @@
+function frankenSplice(arr1, arr2, n) {
+  let newArr = [];
+  let i=0;
+  for(i=0; i<n; i++){
+    newArr.push(arr2[i]);
+  }
+  
+  newArr.push(...arr1);
+  
+  for(i; i<arr2.length; i++){
+    newArr.push(arr2[i]);
+  }
+  
+  return newArr;
+}
+
+console.log(frankenSplice(["claw", "tentacle"], ["head", "shoulders", "knees", "toes"], 2));

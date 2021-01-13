@@ -1,0 +1,16 @@
+function chunkArrayInGroups(arr, size) {
+  let newArr = [];
+  let temp = [];
+
+  for(let i=0; i<arr.length; i++){
+    if(i!==0 && i % size === 0){
+      newArr.push(temp);
+      temp=[];
+    }
+    temp.push(arr[i]);
+  }
+  newArr.push(temp);
+  return newArr;
+}
+
+console.log(chunkArrayInGroups([0, 1, 2, 3, 4, 5], 2));

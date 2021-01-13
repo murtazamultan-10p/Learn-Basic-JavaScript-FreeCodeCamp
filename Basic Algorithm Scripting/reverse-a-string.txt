@@ -1,0 +1,8 @@
+function reverseString(str) {
+  let strCopy="";
+  for(let i=str.length-1; i>=0; i--)
+    strCopy += str[i];
+  return strCopy;
+}
+
+console.log(reverseString("hello"));
