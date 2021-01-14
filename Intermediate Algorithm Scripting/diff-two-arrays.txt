@@ -1,0 +1,10 @@
+function diffArray(arr1, arr2) {
+  var newArr = [];
+ var newArr2 = [];
+
+ newArr = arr1.filter(element => arr2.indexOf(element)==-1);
+ newArr2 = arr2.filter(element => arr1.indexOf(element)==-1);
+ return newArr.concat(newArr2);
+}
+
+console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));
