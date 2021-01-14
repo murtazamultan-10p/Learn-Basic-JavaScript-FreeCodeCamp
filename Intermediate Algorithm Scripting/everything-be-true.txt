@@ -1,0 +1,13 @@
+function truthCheck(collection, pre) {
+  for(let eachObject of collection){
+    if(!eachObject.hasOwnProperty(pre))
+      return false;
+    
+  if(eachObject[pre]===null || eachObject[pre]===0 ||       eachObject[pre] === "" || eachObject[pre] ===  undefined || Number.isNaN(eachObject[pre])){
+      return false;
+    }
+  }
+  return true;
+}
+
+console.log(truthCheck([{"single": "double"}, {"single": NaN}], "single"));
